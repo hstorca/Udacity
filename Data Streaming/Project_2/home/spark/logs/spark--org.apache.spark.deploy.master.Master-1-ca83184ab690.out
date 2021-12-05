@@ -1,0 +1,51 @@
+Spark Command: /usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java -cp /opt/spark-2.3.4-bin-hadoop2.7/conf/:/opt/spark-2.3.4-bin-hadoop2.7/jars/* -Xmx1g org.apache.spark.deploy.master.Master --host ca83184ab690 --port 7077 --webui-port 8080
+========================================
+2021-11-28 13:16:28 INFO  Master:2612 - Started daemon with process name: 1729@ca83184ab690
+2021-11-28 13:16:28 INFO  SignalUtils:54 - Registered signal handler for TERM
+2021-11-28 13:16:28 INFO  SignalUtils:54 - Registered signal handler for HUP
+2021-11-28 13:16:28 INFO  SignalUtils:54 - Registered signal handler for INT
+2021-11-28 13:16:30 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2021-11-28 13:16:31 INFO  SecurityManager:54 - Changing view acls to: root
+2021-11-28 13:16:31 INFO  SecurityManager:54 - Changing modify acls to: root
+2021-11-28 13:16:31 INFO  SecurityManager:54 - Changing view acls groups to: 
+2021-11-28 13:16:31 INFO  SecurityManager:54 - Changing modify acls groups to: 
+2021-11-28 13:16:31 INFO  SecurityManager:54 - SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(root); groups with view permissions: Set(); users  with modify permissions: Set(root); groups with modify permissions: Set()
+2021-11-28 13:16:32 INFO  Utils:54 - Successfully started service 'sparkMaster' on port 7077.
+2021-11-28 13:16:33 INFO  Master:54 - Starting Spark master at spark://ca83184ab690:7077
+2021-11-28 13:16:33 INFO  Master:54 - Running Spark version 2.3.4
+2021-11-28 13:16:33 INFO  log:192 - Logging initialized @7419ms
+2021-11-28 13:16:33 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2021-11-28 13:16:33 INFO  Server:419 - Started @7811ms
+2021-11-28 13:16:34 INFO  AbstractConnector:278 - Started ServerConnector@69531b5a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+2021-11-28 13:16:34 INFO  Utils:54 - Successfully started service 'MasterUI' on port 8080.
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@68c9aaf{/app,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48a5d40{/app/json,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@ad28544{/,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@767b2658{/json,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@204d058a{/static,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@1f88a9b{/app/kill,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@5e5f026d{/driver/kill,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  MasterWebUI:54 - Bound MasterWebUI to 0.0.0.0, and started at http://ca83184ab690:8080
+2021-11-28 13:16:34 INFO  Server:351 - jetty-9.3.z-SNAPSHOT, build timestamp: unknown, git hash: unknown
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@70864e01{/,null,AVAILABLE}
+2021-11-28 13:16:34 INFO  AbstractConnector:278 - Started ServerConnector@2603b56a{HTTP/1.1,[http/1.1]}{ca83184ab690:6066}
+2021-11-28 13:16:34 INFO  Server:419 - Started @8550ms
+2021-11-28 13:16:34 INFO  Utils:54 - Successfully started service on port 6066.
+2021-11-28 13:16:34 INFO  StandaloneRestServer:54 - Started REST server for submitting applications on port 6066
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@524a55d1{/metrics/master/json,null,AVAILABLE,@Spark}
+2021-11-28 13:16:34 INFO  ContextHandler:781 - Started o.s.j.s.ServletContextHandler@48463ddb{/metrics/applications/json,null,AVAILABLE,@Spark}
+2021-11-28 13:16:35 INFO  Master:54 - I have been elected leader! New state: ALIVE
+2021-11-28 13:17:24 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03W\x91\xA8\x8a4}\x81\x98\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:17:24 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@14d0ea{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:17:33 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=21,c=8192,r=20]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03@\x94\x88\xB9D\x967\x00\x00\x00\xAe>>>\x01\x00\n172.18.0.2\x00\x00\xAcq...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:17:33 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@1526a54{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:17:43 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03K\xA0\xB5\xC4@2\xDb\xDd\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:17:43 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@106e7e3f{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:17:53 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03pS\xC2\xF5\xFcb\x96\xBc\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:17:53 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@4ef816d6{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:18:03 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03U\x06"\xA1B3\xE3V\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:18:03 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@510e9477{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:18:13 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03v}\x9czX\xAc\xB9A\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:18:13 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@62c17f21{r=0,c=false,a=IDLE,uri=null}
+2021-11-28 13:18:23 WARN  HttpParser:1859 - Illegal character 0x0 in state=START for buffer HeapByteBuffer@2177cd0c[p=1,l=195,c=8192,r=194]={\x00<<<\x00\x00\x00\x00\x00\x00\xC3\x03a\xB5C\xEe\xD5\xF1\xA7\x86\x00...ing;xpt\x00\x06Master>>>\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00...\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00}
+2021-11-28 13:18:23 WARN  HttpParser:1454 - bad HTTP parsed: 400 Illegal character 0x0 for HttpChannelOverHttp@755e87b7{r=0,c=false,a=IDLE,uri=null}
