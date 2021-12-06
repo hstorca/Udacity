@@ -29,7 +29,7 @@ class TransformedStation(faust.Record):
     line: str
 
 app = faust.App("stations-stream", broker="kafka://localhost:9092", store="memory://")
-topic = app.topic("postgres_stations", value_type=Station)
+topic = app.topic("stations", value_type=Station)
 out_topic = app.topic("stations.table", partitions=1)
 table = app.Table(
     "transformed_station",
